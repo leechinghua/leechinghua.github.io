@@ -50,6 +50,9 @@ body {
 }
 .section1{
   min-height: 100vh;
+  opacity: 0;
+  transform: translateY(20px); /* 元素稍微向下移動 */
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out; /* 動畫效果 */
   h4{
     color: gray;
   }
@@ -141,4 +144,10 @@ footer{
 }
 .email-link:hover .email-icon path {
   fill: var(--secondary-1);
+}
+
+/* 當加上 fade-in 類別時，元素開始浮現 */
+.fade-in {
+  opacity: 1;
+  transform: translateY(0); /* 移回原位 */
 }

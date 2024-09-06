@@ -57,7 +57,10 @@
                 <h4>擅長與人溝通、積極學習新知</h4>
                 <h4>從國中老師轉職為前端工程師，未來將往全端工程師發展。</h4>
               </div>
-              <a href="https://github.com/leechinghua/leechinghua.github.io" class="githubLink">
+              <a
+                href="https://github.com/leechinghua/leechinghua.github.io"
+                class="githubLink"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="50"
@@ -85,7 +88,7 @@
             <img src="/img/cloud1.svg" alt="雲" class="cloudImg" />
             <h2 class="title1Text">About Me</h2>
           </div>
-          <div class="col-md-8 col-12 offset-md-1 p-3">
+          <div class="col-md-8 col-12 offset-md-1 p-3 section2Text">
             <h4>2014/09~2018/06</h4>
             <h4>臺灣師範大學 公民教育與活動領導學系</h4>
             <h6>
@@ -97,7 +100,7 @@
         </div>
         <!-- <div class="row w-100"></div> -->
         <div class="row w-100">
-          <div class="col-md-10 col-12 offset-md-2 p-3">
+          <div class="col-md-10 col-12 offset-md-2 p-3 section2Text">
             <h4>2014/09~2018/06</h4>
             <h4>臺南市金城國中 童軍代理教師</h4>
             <h6>擔任四年國中代理教師，練就了良好的溝通組織與表達能力。</h6>
@@ -109,14 +112,15 @@
           </div>
         </div>
         <div class="row w-100">
-          <div class="col-md-12 col-12 p-3">
+          <div class="col-md-12 col-12 p-3 section2Text">
             <h4>2024/03~2024/08</h4>
             <h4>資展國際(原資策會) 前端工程師就業養成班</h4>
             <h6>
               在轉職期間，先自學HTML、CSS、Bootstrap和JavaScript。隨後參加了資展國際的前端工程師就業養成班，進行更深入的學習。
             </h6>
             <h6>
-              在資展更進一步學習了JavaScript / React.js / HTML5 API / jQuery 等前端技術。
+              在資展更進一步學習了JavaScript / React.js / HTML5 API / jQuery
+              等前端技術。
             </h6>
             <h6>也在期中期末專題中實際使用 Figma 設計版面。</h6>
             <h6>MySQL / PHP / Node.js 設計資料庫與架構後端。</h6>
@@ -231,5 +235,12 @@
       src="https://kit.fontawesome.com/c276a06976.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      window.addEventListener("load", function () {
+        const section1 = document.getElementById("section1");
+
+        section1.classList.add("fade-in");
+      });
+    </script>
   </body>
 </html>
