@@ -63,7 +63,7 @@ body {
     }  
   }
 }
-.githubLink:hover .githubSVG{
+.githubLink:hover .githubSVG path{
   fill: var(--secondary-1);
 }
 .section2{
