@@ -63,6 +63,9 @@ body {
     }  
   }
 }
+.githubLink:hover .githubSVG{
+  fill: var(--secondary-1);
+}
 .section2{
   flex-direction: column;
   min-height: 100vh;
@@ -120,9 +123,7 @@ body {
   margin-bottom: 10px; /* 與文字之間的間距 */
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); /* 添加陰影 */
 }
-/* .card{
-  height: 100%;
-} */
+
 footer{
   display: flex;
   flex-direction: column;
