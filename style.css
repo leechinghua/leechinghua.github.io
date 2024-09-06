@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Serif+TC:wght@200..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
+}
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: normal; 
+  margin: 0;
+  padding: 0;
+}*/
+
+:root {
+  --primary-1: #5f8ea5;
+  --primary-2: #7ba5b8;
+  --secondary-1: #d19e8a;
+  --secondary-2: #f6f1e4;
+  --secondary-3: #f9f6ec;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
+  background-color: var(--secondary-3);
+}
+.navbar{
+  position: fixed;
+  background-color: #ffffff;
+  top: 0; 
+  width: 100%;
+  z-index: 1000;
+}
+.nav-link:hover {
+  color: var(--secondary-1);
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 10px 0px 10px;
+}
+.section1{
+  min-height: 100vh;
+  h4{
+    color: gray;
+  }
+  h1{
+    color: var(--primary-1);
+    font-weight: 600;
+  }
+  .leftColumnContent{
+    h4{
+    color: var(--secondary-1);   
+    }  
+  }
+}
+.section2{
+  flex-direction: column;
+  min-height: 100vh;
+  h2{
+    font-weight: 800;
+  }
+  h4{
+    color: var(--primary-1);
+    font-weight: 800;
+  }
+}
+.section3{
+  flex-direction: column;
+  min-height: 100vh;
+  h2{
+    font-weight: 800;
+  }
+}
+
+.left {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+}
+.avatar {
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: -20px 20px 0px var(--secondary-1);
+  max-width: 350px;
+  padding: 0;
+}
+.title1{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* 確保容器能填滿可用空間 */
+  text-align: center; /* 確保文字居中對齊 */
+  /* margin-top: 60px; */
+}
+.title1Text{
+  position: absolute;
+  color: var(--secondary-1);
+}
+.cloudImg {
+  margin-bottom: 10px; /* 與文字之間的間距 */
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); /* 添加陰影 */
+}
+/* .card{
+  height: 100%;
+} */
+footer{
+  display: flex;
+  flex-direction: column;
+  height: 146px;
+  opacity: 0.5;
+  background: var(--grey-400, #C4C4C4);
+  justify-content: center;
+  text-align: center;
+
+}
+.email-link {
+  color: black; /* 這裡定義正常狀態的顏色 */
+  text-decoration: none; /* 移除預設的底線 */
+  transition: color 0.3s ease; /* 添加動畫效果讓變色更平滑 */
+}
+.email-link:hover .email-icon path {
+  fill: var(--secondary-1);
+}
