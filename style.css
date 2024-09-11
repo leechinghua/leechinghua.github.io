@@ -50,9 +50,11 @@ body {
 }
 .section1{
   min-height: 100vh;
-  opacity: 0;
-  transform: translateY(20px); /* 元素稍微向下移動 */
-  transition: opacity 1.5s ease-out, transform 1.5s ease-out; /* 動畫效果 */
+  /* opacity: 0; */
+  /* transform: translateY(20px);  */
+  /* 元素稍微向下移動 */
+  /* transition: opacity 1.5s ease-out, transform 1.5s ease-out;  */
+  /* 動畫效果 */
   h4{
     color: gray;
   }

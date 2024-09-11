@@ -48,7 +48,7 @@
     </header>
     <main class="container">
       <section id="section1" class="section section1">
-        <div class="row">
+        <div class="row" data-aos="fade-up">
           <div class="col-md-6 col-12 left p-3">
             <div class="leftColumn">
               <h4>welcome to</h4>
@@ -84,11 +84,11 @@
       </section>
       <section id="section2" class="section section2">
         <div class="row w-100">
-          <div class="col-md-3 col-12 title1">
+          <div class="col-md-3 col-12 title1" data-aos="fade-right">
             <img src="/img/cloud1.svg" alt="雲" class="cloudImg" />
             <h2 class="title1Text">About Me</h2>
           </div>
-          <div class="col-md-8 col-12 offset-md-1 p-3 section2Text">
+          <div class="col-md-8 col-12 offset-md-1 p-3" data-aos="fade-left">
             <h4>2024/03~2024/08</h4>
             <h4>資展國際(原資策會) 前端工程師就業養成班</h4>
             <h6>
@@ -105,7 +105,7 @@
         </div>
         <!-- <div class="row w-100"></div> -->
         <div class="row w-100">
-          <div class="col-md-10 col-12 offset-md-2 p-3 section2Text">
+          <div class="col-md-10 col-12 offset-md-2 p-3" data-aos="fade-left">
             <h4>2019/08~2023/07</h4>
             <h4>臺南市金城國中 童軍代理教師</h4>
             <h6>擔任四年國中代理教師，練就了良好的溝通組織與表達能力。</h6>
@@ -117,7 +117,7 @@
           </div>
         </div>
         <div class="row w-100">
-          <div class="col-md-12 col-12 p-3 section2Text">
+          <div class="col-md-12 col-12 p-3" data-aos="fade-left">
             <h4>2014/09~2018/06</h4>
             <h4>臺灣師範大學 公民教育與活動領導學系</h4>
             <h6>
@@ -130,7 +130,7 @@
       </section>
       <section id="section3" class="section section3">
         <div class="row w-100 align-items-center">
-          <div class="col-md-3 col-12 title1">
+          <div class="col-md-3 col-12 title1" data-aos="fade-right">
             <img src="/img/cloud1.svg" alt="雲" class="cloudImg" />
             <h2 class="title1Text">My Work</h2>
           </div>
@@ -138,7 +138,7 @@
             <h4>這些是線上課程自學與在資展國際製作的作品</h4>
           </div> -->
         </div>
-        <div class="row w-100 justify-content-center">
+        <div class="row w-100 justify-content-center" data-aos="fade-up">
           <div class="col-md-5 col-12 m-2">
             <div class="card h-100">
               <img src="/img/yeahfun.png" class="card-img-top" alt="作品照片" />
@@ -162,7 +162,7 @@
             </div>
           </div>
         </div>
-        <div class="row w-100 justify-content-center">
+        <div class="row w-100 justify-content-center" data-aos="fade-up">
           <div class="col-md-5 col-12 m-2">
             <div class="card h-100">
               <img
@@ -236,12 +236,19 @@
       src="https://kit.fontawesome.com/c276a06976.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      window.addEventListener("load", function () {
-        const section1 = document.getElementById("section1");
-
-        section1.classList.add("fade-in");
+      AOS.init({
+        duration: 1200,
+        offset: 200,
       });
+    </script>
+    <script>
+      // window.addEventListener("load", function () {
+      //   const section1 = document.getElementById("section1");
+
+      //   section1.classList.add("fade-in");
+      // });
     </script>
   </body>
 </html>
