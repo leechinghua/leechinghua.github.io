@@ -50,6 +50,7 @@ body main section.main-area {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: 15px;
 }
 body main section.main-area div.info {
   flex-basis: 450px;
@@ -184,7 +185,7 @@ body footer .email-link:hover .email-icon path {
     display: none;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
   body nav {
     position: static;
   }

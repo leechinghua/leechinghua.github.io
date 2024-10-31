@@ -56,6 +56,7 @@ body {
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+            margin-bottom: 15px;
 
             div.info {
                 flex-basis: 450px;
@@ -240,7 +241,7 @@ body {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
     body {
         nav {
             position: static;
