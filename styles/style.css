@@ -95,6 +95,10 @@ body main section.about-me section.description {
 body main section.about-me section.description h2 {
   font-size: 2rem;
 }
+body main section.about-me section.description .progress-bar-area h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
 body main section.about-me section.description .progress-bar-area p {
   margin-top: 1rem;
 }
