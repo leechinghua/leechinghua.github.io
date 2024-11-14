@@ -1,35 +1,35 @@
-// let hero = document.querySelector(".hero");
-// let animation = document.querySelector(".animation-wrapper");
-// let slider = document.querySelector(".slider");
+let hero = document.querySelector(".hero");
+let animation = document.querySelector(".animation-wrapper");
+let slider = document.querySelector(".slider");
 
-// const time_line = new TimelineMax();
+const time_line = new TimelineMax();
 
-// // parameter1 是要控制的對象
-// // parameter2 是duration
-// // parameter3 是控制對象的原始狀態
-// // parameter4 是控制對象的動畫結束後的狀態
-// // parameter5 是控制對象的動畫開始時間
+// parameter1 是要控制的對象
+// parameter2 是duration
+// parameter3 是控制對象的原始狀態
+// parameter4 是控制對象的動畫結束後的狀態
+// parameter5 是控制對象的動畫開始時間
 
-// time_line
-//   .fromTo(hero, 1, { height: "0%" }, { height: "100%", ease: Power2.easeIOout })
-//   .fromTo(
-//     hero,
-//     1.2,
-//     { width: "80%" },
-//     { width: "100%", ease: Power2.easeInOut }
-//   )
-//   .fromTo(
-//     slider,
-//     1,
-//     { x: "-100%" },
-//     { x: "0%", ease: Power2.easeInOut },
-//     "-=1.2"
-//   )
-//   .fromTo(animation, 0.5, { opacity: 1 }, { opacity: 0 });
+time_line
+  .fromTo(hero, 1, { height: "0%" }, { height: "100%", ease: Power2.easeIOout })
+  .fromTo(
+    hero,
+    1.2,
+    { width: "80%" },
+    { width: "100%", ease: Power2.easeInOut }
+  )
+  .fromTo(
+    slider,
+    1,
+    { x: "-100%" },
+    { x: "0%", ease: Power2.easeInOut },
+    "-=1.2"
+  )
+  .fromTo(animation, 0.5, { opacity: 1 }, { opacity: 0 });
 
-// setTimeout(() => {
-//   animation.style.pointerEvents = "none";
-// }, 2700);
+setTimeout(() => {
+  animation.style.pointerEvents = "none";
+}, 2700);
 // 讓整個網站的Enter都禁止使用
 window.addEventListener("keypress", (e) => {
   if (e.key == "Enter") {
